@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"async": "^1.4.0"
+	},
+	"nodeDist": "https://nodejs.org/dist/v4.2.1/node-v4.2.1-linux-x64.tar.gz",
+	"lambdaRole": "arn:aws:iam::1234567890:role/lambda_basic_execution",
+	"lambdaTimeout_s": 30,
+	"lambdaMemory": 1536
+}
