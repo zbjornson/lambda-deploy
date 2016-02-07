@@ -3,7 +3,7 @@ Deploy lambda functions and run with any version of node using portable binaries
 
 AWS Lambda only supports nodejs 0.10. This repository contains a deploy script and a template
 Lambda function that allows you to run any version of node.js by packaging a portable binary
-file and using very efficient inter-process communication (IPC).
+file and using very efficient inter-process communication (IPC). (Note -- currently results are sent back via IPC, but invocation spawns a new node process and passes the event as an arg every time. This should also be done with a single node instance and using IPC. Didn't get around to packaging this up yet.)
 
 The directory `lambdas/` contains your lambda functions. `lambdas/lambda1` is an example lambda function. It is comprised of:
 
